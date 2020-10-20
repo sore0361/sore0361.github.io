@@ -93,8 +93,8 @@
           document.getElementById("output").innerHTML = "USA, MEX, GTM, HND, NIC, CRI, PAN";
         }
 
-        else {
-          window.alert("You have not entered a valid country code. Try again.")
+        else if(coder.length < 3){
+          window.alert("You have not entered a valid country code. Try again.");
         }
     } ();
     //toggle();
