@@ -1,7 +1,6 @@
 
 <!-- this is the latest version including a React button component -->
 
-<!DOCTYPE html>
 <html>
   <head>
     <!--<style type="style.css"/>-->
