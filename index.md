@@ -54,7 +54,7 @@
 
         if(coder == "CAN" || coder == "can") {
           //window.write("CAN");
-          document.getElementById("output").innerHTML = "CAN";
+          document.getElementById("output").innerHTML = "USA, CAN";
         }
 
         else if(coder == "USA" || coder ==  "usa") {
