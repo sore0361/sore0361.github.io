@@ -1,5 +1,5 @@
 
-<!-- LOOK AT THIS FILE this is the latest version including a React button component -->
+<!-- this is the latest version including a React button component -->
 
 
 <html>
@@ -87,7 +87,6 @@
 
 
         if(coder == "CAN" || coder == "can") {
-          //window.write("CAN");
           document.getElementById("output").innerHTML = "USA, CAN";
         }
 
@@ -127,7 +126,15 @@
           document.getElementById("output").innerHTML = "USA, MEX, GTM, HND, NIC, CRI, PAN";
         }
 
-        else if(coder.length < 3){
+        else if (coder.length == 3 && (coder != "CAN" || coder != "USA" || coder != "MEX" || coder != "BLZ" || coder != "GTM" || coder != "SLV" || coder != "HND" || coder != "NIC" || coder != "CRI" || coder != "PAN")) {
+          window.alert("You have not entered a valid country code. Try again.");
+        }
+
+        else if(coder.length < 3) {
+          window.alert("You have not entered a valid country code. Try again.");
+        }
+
+        else {//if(coder.length > 3) {
           window.alert("You have not entered a valid country code. Try again.");
         }
     } ();
@@ -135,6 +142,9 @@
 
 
     
+
+  </body>
+</html>
 
   </body>
 </html>
